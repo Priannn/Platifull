@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* Tambahkan gaya khusus untuk tampilan mobile */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Atur sesuai dengan tinggi navbar */
+        right: 0;
+        background-color: #fff; /* Atur sesuai kebutuhan */
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Atur bayangan sesuai kebutuhan */
+      }
+    }
+  </style>
+  <body class="bg-[#FFF7FC]">
+    <section class="px-4 md:px-14 md:py-8">
+      <nav
+        class="flex justify-between items-center text-hijautua font-medium font-core"
+      >
+        <div class="">
+          <img src="/src/asset/logo.svg" alt="" />
+        </div>
+        <div class="menu md:flex hidden">
+          <ul class="flex space-x-5 text-lg">
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="text-lg space-x-4">
+          <a href="">Sign In</a>
+          <button class="py-2 px-6 bg-hijaumuda text-white">Sign Up</button>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="hamburger-btn" class="text-2xl focus:outline-none">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
+    </section>
+
+    <section class="px-4 md:px-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+        <div class="w-full flex justify-center">
+          <img src="./asset/hero_sec.svg" alt="" class="w-full md:w-auto" />
+        </div>
+        <div
+          class="md:ml-10 mt-8 md:mt-0 flex flex-col items-center md:items-start"
+        >
+          <h1
+            class="text-3xl md:text-5xl leading-none text-hijautua font-medium font-core text-center md:text-left"
+          >
+            <span class="text-kuning">Think</span> Green and <br />
+            Plants <span class="text-kuning">Something</span>.
+          </h1>
+          <p
+            class="text-[22px] md:text-lg font-light my-4 text-center md:text-left"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Ab tenetur natus officia neque voluptas fuga vitae saepe <br />
+            omnis dolores repudiandae?
+          </p>
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10 font-medium w-full md:w-auto justify-center md:justify-start"
+          >
+            <button class="bg-hijaubiru px-8 py-2 text-white font-core">
+              Learn Now
+            </button>
+            <button
+              class="border border-hijaubiru px-8 py-2 text-hijaubiru font-core"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 md:px-14 md:mt-44 mt-20">
+      <div class="grid md:grid-cols-3 grid-cols-1 justify-center gap-2">
+        <div class="text-center">
+          <img src="./asset/free.svg" alt="" class="mx-auto" />
+
+          <div class="font-core mt-6">
+            <h1 class="font-bold text-2xl text-hijautua">Free Shipping</h1>
+            <p class="font-extralight text-2xl">
+              Lorem ipsum dolor <br />
+              sit amet consectetur
+            </p>
+          </div>
+        </div>
+        <div class="text-center md:my-1">
+          <img src="./asset/securty.svg" alt="" class="mx-auto" />
+          <div class="font-core mt-6">
+            <h1 class="font-bold text-2xl text-hijautua">Secure Payment</h1>
+            <p class="font-extralight text-2xl">
+              Lorem ipsum dolor <br />
+              sit amet consectetur
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="./asset/dayretrun.svg" alt="" class="mx-auto" />
+          <div class="font-core mt-6">
+            <h1 class="font-bold text-2xl text-hijautua">120 Days Return</h1>
+            <p class="font-extralight text-2xl">
+              Lorem ipsum dolor <br />
+              sit amet consectetur
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 md:px-14 md:mt-44 mt-20">
+      <h1 class="text-center font-core font-bold text-hijautua text-3xl mb-6">
+        New Arrivals In This Week
+      </h1>
+      <div class="grid md:grid-cols-2 grid-cols-1 w-full gap-6">
+        <div class="bg-[#FFEADD] relative rounded-3xl">
+          <div class="p-10 mt-6">
+            <p>Good Deal</p>
+            <h1
+              class="mt-2 font-core text-hijautua font-bold md:text-4xl text-5xl"
+            >
+              Plant For Interior <br />
+              Decoration
+            </h1>
+            <p
+              class="rounded-full w-fit px-5 py-2 bg-[#A73121] text-white my-8"
+            >
+              Start From : <span class="font-bold">$320</span>
+            </p>
+            <a href="" class="font-bold border-b-2 border-black">SHOP NOW</a>
+          </div>
+          <div class="absolute bottom-0 right-0">
+            <img src="./asset/ant.svg" alt="" class="w-28 md:w-40" />
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-[#CDFADB] relative rounded-3xl">
+            <div class="p-6">
+              <h1 class="mt-2 font-core mb-10 text-hijautua font-bold text-4xl">
+                Monsera
+              </h1>
+              <a href="" class="font-bold border-b-2 border-black">SHOP NOW</a>
+            </div>
+            <div class="absolute bottom-0 right-0">
+              <img src="./asset/monsera.svg" alt="" class="w-32 md:w-40" />
+            </div>
+          </div>
+          <div class="bg-[#003C43] relative rounded-3xl">
+            <div class="p-6 text-white">
+              <h1 class="mt-2 font-core mb-10 font-bold md:text-4xl text-2xl">
+                Plant for Garden
+              </h1>
+              <a href="" class="font-bold border-b-2 border-white">SHOP NOW</a>
+            </div>
+            <div class="absolute bottom-0 right-0">
+              <img src="./asset/evergreen.svg" alt="" class="w-32 md:w-40" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 md:px-14 mt-44">
+      <h1
+        class="text-center font-core font-bold text-hijautua text-3xl mb-6"
+        id="productt"
+      >
+        Our Product
+      </h1>
+      <div class="flex justify-center gap-12">
+        <a href="#productt" onclick="showContent('All', this);hideButton()"
+          >All</a
+        >
+        <a href="#productt" onclick="showContent('Best', this);hideButton()"
+          >Top Rated</a
+        >
+        <a href="#productt" onclick="showContent('Top', this);hideButton()"
+          >Best Seller</a
+        >
+      </div>
+      <div class="grid md:grid-cols-4 grid-cols-1 mt-12 gap-10" id="content">
+        <!-- Tambahkan card lainnya di sini -->
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/peacelly.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Peacelly
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/lavender.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Lavender
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/evergreenn.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Evergreen
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/anturiumm.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Anturium
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button
+          id="show-more-button"
+          onclick="showContent('All'); hideButton()"
+          class="bg-[#ECB159] text-[#561C24] font-bold font-core px-6 py-2 rounded-full text-md"
+        >
+          Show More
+        </button>
+      </div>
+    </section>
+    <section class="px-4 md:px-14 mt-20">
+      <div class="relative flex justify-center items-center">
+        <img src="./asset/absolute.svg" alt="" class="rounded-md" />
+        <div class="absolute md:bottom-12 text-center">
+          <h1 class="text-white font-bold font-core md:text-2xl text-[10px]">
+            We Have made the beauty of plants one of the most <br />
+            beautiful features in your home
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 md:px-14 md:mt-44 mt-20">
+      <h1
+        class="text-base font-bold font-core text-kuning md:text-left text-center"
+      >
+        OUR LATEST BLOG
+      </h1>
+      <div class="flex justify-between items-center">
+        <h1 class="font-core font-semibold text-2xl text-hijautua">
+          Read The Most Recent Blogs
+        </h1>
+        <button
+          class="bg-hijaubiru md:px-8 px-5 md:py-2 md:rounded-none rounded-xl font-bold text-sm text-white font-core"
+        >
+          Learn Now
+        </button>
+      </div>
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-10 mt-8">
+        <div class="p-5 shadow-lg border rounded-xl">
+          <img src="./asset/blog1.svg" alt="" />
+          <div class="flex justify-between mt-2">
+            <h1 class="font-core font-bold text-xl text-kuning">John Doe</h1>
+            <h1 class="font-bold">May 12, 2021</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
+            aliquid totam officia sed reprehenderit, repellendus commodi iure..
+          </p>
+        </div>
+        <div class="p-5 shadow-lg border rounded-xl">
+          <img src="./asset/blog2.svg" alt="" />
+          <div class="flex justify-between mt-2">
+            <h1 class="font-core font-bold text-xl text-kuning">John Doe</h1>
+            <h1 class="font-bold">May 12, 2021</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
+            aliquid totam officia sed reprehenderit, repellendus commodi iure..
+          </p>
+        </div>
+        <div class="p-5 shadow-lg border rounded-xl">
+          <img src="./asset/blog3.svg" alt="" />
+          <div class="flex justify-between mt-2">
+            <h1 class="font-core font-bold text-xl text-kuning">John Doe</h1>
+            <h1 class="font-bold">May 12, 2021</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
+            aliquid totam officia sed reprehenderit, repellendus commodi iure..
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-14 md:mt-44 mt-20">
+      <div class="text-center mb-8">
+        <h1 class="text-base text-kuning font-core font-bold">TESTIMONIALS</h1>
+        <h1 class="text-3xl font-bold font-core">What People Say</h1>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-10 mt-8"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg"
+        >
+          <div class="flex-shrink">
+            <img
+              src="./asset/testimoni1.svg"
+              alt="Testimonial 1"
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover"
+            />
+          </div>
+          <div class="ml-0 md:ml-7 mt-4 md:mt-0 text-center md:text-left">
+            <h1 class="font-core font-bold">Jullthebest</h1>
+            <div class="flex justify-center md:justify-start text-yellow-500">
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipisicing elit. Ducimus quia dicta perferendis vero <br />
+              iste nulla?
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg"
+        >
+          <div class="flex-shrink-0">
+            <img
+              src="./asset/testimoni2.svg"
+              alt="Testimonial 2"
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover"
+            />
+          </div>
+          <div class="ml-0 md:ml-7 mt-4 md:mt-0 text-center md:text-left">
+            <h1 class="font-core font-bold">Jullthebest</h1>
+            <div class="flex justify-center md:justify-start text-yellow-500">
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipisicing elit. Ducimus quia dicta perferendis vero <br />
+              iste nulla?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#DAFFFB]">
+      <footer class="px-4 md:px-14 mt-20 p-8 relative">
+        <div class="absolute top-0 right-5 md:right-20">
+          <img src="./asset/gantungan.svg" alt="" class="w-16 md:w-auto" />
+        </div>
+        <div class="absolute top-0 left-5 md:left-[450px]">
+          <img src="./asset/gantungan.svg" alt="" class="w-16 md:w-auto" />
+        </div>
+        <div class="md:block hidden absolute top-0 left-20 md:left-[700px]">
+          <img src="./asset/gantungan.svg" alt="" class="w-16 md:w-auto" />
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-10">
+          <div class="text-center md:text-left">
+            <img
+              src="./asset/logo.svg"
+              alt=""
+              class="mx-auto md:mx-0md:mt-1 mt-5"
+            />
+            <p class="md:my-5 my-14">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+              perspiciatis eaque. Ullam temporibus iusto recusandae modi libero
+              neque nam provident?
+            </p>
+            <div
+              class="flex justify-center md:justify-start text-4xl space-x-4"
+            >
+              <i class="bx bxl-instagram-alt"></i>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </div>
+          </div>
+          <div class="mt-10 md:mt-0 md:text-justify text-center md:ml-36 ml-0">
+            <h1 class="font-bold font-core">Quick Links</h1>
+            <div class="flex flex-col mt-6 space-y-2">
+              <a href="">Home</a>
+              <a href="">Product</a>
+              <a href="">Services</a>
+              <a href="">Blog</a>
+            </div>
+          </div>
+          <div class="mt-10 md:mt-0 text-center md:text-left">
+            <h1 class="font-bold font-core">Contact Us</h1>
+            <div class="flex flex-col mt-6 space-y-2">
+              <a href="">089879868585877</a>
+              <a href="">098908098090979</a>
+              <a href="">Gla@gmail.com</a>
+              <a href="">Jln tunjung tututr no 3 gg 3</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const menu = document.querySelector(".menu");
+
+        // Tambahkan event listener untuk hamburger button
+        hamburgerBtn.addEventListener("click", function () {
+          menu.classList.toggle("active");
+        });
+      });
+
+      function hideButton() {
+        var button = document.getElementById("show-more-button");
+        button.style.display = "none";
+      }
+
+      function showContent(category, clickedLink) {
+        var contentDiv = document.getElementById("content");
+
+        // Reset warna semua tautan menjadi hitam
+        var allLinks = document.querySelectorAll("a");
+        allLinks.forEach(function (link) {
+          link.style.color = "black";
+          link.style.borderBottom = "none";
+          link.style.fontWeight = "normal";
+        });
+
+        // Ubah warna tautan yang dipilih menjadi merah
+        clickedLink.style.color = "#00FF38";
+        clickedLink.style.borderBottom = "2px solid #00FF38";
+        clickedLink.style.fontWeight = "bold";
+
+        switch (category) {
+          case "All":
+            contentDiv.innerHTML = `
+            <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/peacelly.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Peacelly
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/lavender.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Lavender
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/evergreenn.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Evergreen
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/anturiumm.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Anturium
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/alocasia.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Alocasia
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/calathea.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Calathea
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/bird.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Bird of Paradise
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/Monstera.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Monstera
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/palm.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Palm
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/shamrockk.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Shamrock
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/zz.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            ZZ (Zamioculcas)
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/snake.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Snake Plant
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+            `;
+            break;
+          case "Best":
+            contentDiv.innerHTML = `
+            <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/peacelly.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Peacelly
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/lavender.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Lavender
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/evergreenn.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Evergreen
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/anturiumm.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Anturium
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/alocasia.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Alocasia
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/calathea.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Calathea
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+            `;
+            break;
+          case "Top":
+            contentDiv.innerHTML = `
+            <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/bird.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Bird of Paradise
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/Monstera.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Monstera
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/palm.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Palm
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/shamrockk.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Shamrock
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/zz.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            ZZ (Zamioculcas)
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <div class="p-5 shadow-2xl rounded-xl">
+          <img src="./asset/snake.svg" alt="" />
+          <hr class="border-b border-[#B80000] my-1" />
+          <h1 class="font-core font-bold text-xl text-hijautua text-center">
+            Snake Plant
+          </h1>
+          <div
+            class="flex justify-between font-core font-bold text-xl text-[#B80000]"
+          >
+            <h1>Price :</h1>
+            <p>$20</p>
+          </div>
+          <button
+            class="w-full bg-hijaumuda py-2 rounded-md text-white font-core font-bold"
+          >
+            Buy Now
+          </button>
+        </div>
+            `;
+            break;
+          default:
+            contentDiv.innerHTML =
+              "<p>Kategori yang Anda pilih tidak valid.</p>";
+        }
+      }
+    </script>
+  </body>
+</html>
